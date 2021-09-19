@@ -317,6 +317,12 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 main {
   padding: 15px;
 }
