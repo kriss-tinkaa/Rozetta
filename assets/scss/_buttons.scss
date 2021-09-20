@@ -1,0 +1,76 @@
+@import './variables';
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 5px;
+    &:hover{
+        cursor: pointer;
+        border-color: #454545;
+    }
+    &-primary{
+        background-color: $btn-bg;
+        &--icon{
+            display: flex;
+            align-items: center;
+            p{
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+
+.icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background-color: $btn-bg;
+    border-radius: 50%;
+    &:before{
+        position: absolute;
+        display: block;
+    }
+    &-vk{
+        &:before{
+            content: url('./../img/svg/icon_VK.svg');  
+        }
+    }
+    &-instagram{
+        &:before{
+            content: url('./../img/svg/icon-insta.svg');  
+        }
+    }
+    &-telegram{
+        &:before{
+            content: url('./../img/svg/icon-telegram.svg');  
+        }
+    }
+    &-shop{
+        background-color: #4A5FFF;
+        &:before{
+            content: url('./../img/svg/icon-shop.svg');  
+        }
+    }
+    &-call{
+        background-color: #fff;
+        &:before{
+            content: url('./../img/svg/icon-call.svg');  
+        }
+    }
+    &-check{
+        background-color: transparent;
+        &:before{
+            content: url('./../img/svg/icon-check.svg');  
+        }
+    }
+    &-attention{
+        background-color: transparent;
+        &:before{
+            content: url('./../img/svg/icon-attention.svg');  
+        }
+    }
+}

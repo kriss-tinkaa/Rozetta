@@ -1,10 +1,17 @@
 @import './reset';
 @import './variables';
+@import './buttons';
 @import './header';
+@import './footer';
 @import './global';
 @import './section';
 
 
-main{
-    padding: 15px;
+.page{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    main{
+        flex: 1;
+    }
 }

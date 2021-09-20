@@ -1,0 +1,29 @@
+@import './variables';
+
+header{
+    border-bottom: 1px solid #EEF2F6;
+}
+
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    &__actions{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__socials{
+        display: flex;
+        align-items: center;
+        .icon-wrapper{
+            margin: 0 5px;
+        }
+    }
+    &__callback{
+        margin-left: 15px;
+    }
+    &__shop{
+        margin-left: 15px;
+    }
+}
