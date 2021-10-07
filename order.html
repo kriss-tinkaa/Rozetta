@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>У Сказки</title>
+    <meta name="description" content="У Сказки" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+  </head>
+<body>
+  <div class="page page-order">
+    <header>
+      <div class="container">
+          <div class="page-header">
+            <div class="page-header__name">
+              <h3>У Сказки <span class="hide-tablet"> — магазин для дома.</span></h3>
+            </div>
+            <div class="page-header__actions">
+              <div class="page-header__socials"> 
+                <a href="#" class="icon-wrapper">
+                  <span class="icon icon-vk"></span>
+                </a>
+                <a href="#" class="icon-wrapper">
+                  <span class="icon icon-instagram"></span> 
+                </a>
+                <a href="#" class="icon-wrapper">
+                  <span class="icon icon-telegram"></span>
+                </a>
+                 
+              </div>
+              <div  class="page-header__callback">
+                <div class="callback" id="header-btn">
+                  <button class="btn btn-primary btn-primary--icon">
+                    <span class="icon icon-call"></span>
+                    <p>Позвоните мне</p>
+                  </button>
+                </div>
+              </div>
+              <div  class="page-header__shop">
+                <div class="shop">
+                  <button class="btn btn-primary btn-primary--icon">
+                    <span class="icon icon-shop"></span>
+                    <p>Моя корзина</p>
+                  </button>
+                  <div class="shop-hint">
+                    
+                    <div class="shop-hint-empty" style="display: none;">
+                      <span></span>
+                      <div class="shop-hint-empty__main">
+                        Ваша корзина пуста :(
+                      </div>
+                      <div class="shop-hint-empty__footer">
+                        <a href="#">Перейти к покупкам</a>
+                      </div>
+                    </div>
+                    <div class="shop-hint-full" >
+                      <span></span>
+                      <div class="shop-hint-full__header">
+                        Ваша корзина
+                      </div>
+                      <div class="shop-hint-full__main">
+                        <div class="shop-hint-full__item">
+                          <div class="image">
+                            <img src="./assets/img/cards/card-item.jpg" alt="">
+                          </div>
+                          <div class="main">
+                            <div class="title">Шапка и шарф комплект</div>
+                            <div class="desc">Дизайн: весёлый банан</div>
+                          </div>
+                          <div class="">
+                            <div class="value">7 990 ₽</div>
+                            <div class="delete">Удалить</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shop-hint-full__footer">
+                        <a href="#">Перейти к оформление заказа</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="cart-order">
+                <h2 class="cart-order__title">Куда нам доставить заказ?</h2>
+                <div class="cart-order__wrap d-flex">
+                    <div class="stepwizard">
+                        <div class="stepwizard-step" id="step-1">
+                            <h3 class="stepwizard-step__title">Шаг 1. Укажите свои контактные данные:</h3>
+                            <div class="stepwizard-step__row d-flex">
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" required="" name="userName" value=""  id="testName">
+                                    <label for="userName">Имя</label>
+                                </div>
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" required="" name="userSurname" value="">
+                                    <label for="userSurname">Фамилия</label>
+                                </div>
+                            </div>
+                            <div class="stepwizard-step__row">
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" required="" name="phone" value="">
+                                    <label for="phone">Номер мобильного телефона</label>
+                                </div>
+                            </div>
+                            <div class="stepwizard-step__row">
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="email" minlength="1" required="" name="email" value="">
+                                    <label for="email">Действующая электронная почта</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stepwizard-step" id="step-2">
+                            <h3 class="stepwizard-step__title">Шаг 2. Введите свой адрес:</h3>
+                            <div class="stepwizard-step__row">
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" required="" name="adress" value="">
+                                    <label for="adress">Введите город</label>
+                                </div>
+                            </div>
+                            <div class="stepwizard-step__row d-flex">
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" required="true" name="street" value="">
+                                    <label for="street">Улица</label>
+                                </div>
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" required="" name="houseNumber" value="">
+                                    <label for="houseNumber">Дом</label>
+                                </div>
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" name="flatNumber" value="">
+                                    <label for="flatNumber">Квартира</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stepwizard-step" id="step-3">
+                            <h3 class="stepwizard-step__title">Шаг 3. Выберите удобный вариант доставки:</h3>
+                            <div class="stepwizard-step__row">
+                                <div class="stepwizard-step__input-wrap">
+                                    <input type="text" minlength="1" required="" name="adress" value="">
+                                    <label for="adress">Введите город</label>
+                                </div>
+                            </div>
+                            <div class="stepwizard-step__row d-flex">
+                                <div class="stepwizard-step__input-wrap">
+                                    <select name="dateAdded" required="">
+                                        <option value="" id="empty-select">Обязательное поле</option>
+                                        <option value="Курьер">Курьер</option>
+                                        <option value="Самовывоз">Самовывоз</option>
+                                        <option value="Почта России">Почта России</option>
+                                        <option value="СДЭК">СДЭК</option>
+                                      </select>
+                                    <label for="dateAdded">Выбрать</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-list__items">
+                            <div class="product-item">
+                                <div class="product-item__image">
+                                    <img src="./assets/img/cards/card-item.jpg" alt="">
+                                </div>
+                                <div class="product-item__title">Красная роза в колбе King</div>
+                                <div class="product-item__input-wrapper quantity">
+                                    <input type="number" min="1" max="100" step="1" value="1" class="quantity__cart">
+                                    <div class="quantity-nav">
+                                        <div class="quantity-button quantity-up">+</div>
+                                        <div class="quantity-button quantity-down">−</div>
+                                    </div>
+                                </div>
+                                <div class="product-item__total d-flex">
+                                    <div class="product-item__price">11980 руб.</div>
+                                    <div class="product-item__remove">Удалить</div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item__image">
+                                    <img src="./assets/img/cards/card-item.jpg" alt="">
+                                </div>
+                                <div class="product-item__title">Красная роза в колбе King</div>
+                                <div class="product-item__input-wrapper quantity">
+                                    <input type="number" min="1" max="100" step="1" value="1" class="quantity__cart">
+                                    <div class="quantity-nav">
+                                        <div class="quantity-button quantity-up">+</div>
+                                        <div class="quantity-button quantity-down">−</div>
+                                    </div>
+                                </div>
+                                <div class="product-item__total d-flex">
+                                    <div class="product-item__price">11980 руб.</div>
+                                    <div class="product-item__remove">Удалить</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list__status">
+                            <div class="cart-status">
+                                <div class="cart-status-row">
+                                    <div class="cart-status__name">Ваш заказ:</div>
+                                    <div class="cart-status__value">12970 руб.</div>
+                                </div>
+                                <div class="cart-status-row">
+                                    <div class="cart-status__name">Доставка:</div>
+                                    <div class="cart-status__value">490 руб.</div>
+                                </div>
+                                <div class="cart-status-row">
+                                    <div class="cart-status__name">
+                                        У вас есть промокод? 
+                                        <a href="" class="cart-stats__link" id="promo-link">Введите его здесь <span class="cart-stats__arrow-down">›</span></a>
+                                    </div>
+                                    <div class="cart-status__value"></div>
+                                </div>
+                                <div class="cart-status-row">
+                                    <div class="cart-status__name">
+                                        Итого:
+                                    </div>
+                                    <div class="cart-status__value">13460 руб.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+      <div class="container">
+          <div class="footer-main">
+            <div class="footer-main__name">
+              <h3>У Сказки <span class="hide-tablet"> — магазин для дома.</span></h3>
+            </div>
+              <div class="footer-main__socials">
+                <a href="#" class="icon-wrapper">
+                  <span class="icon icon-vk"></span>
+                </a>
+                <a href="#" class="icon-wrapper">
+                  <span class="icon icon-instagram"></span>
+                </a>
+                <a href="#" class="icon-wrapper">
+                  <span class="icon icon-telegram"></span>
+                </a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="container">
+          <div class="footer-info">
+            <div class="footer-info__license">
+              © 1995-2021. Все права защищены.
+            </div>
+            <div class="footer-info__links">
+              <a href="#">Политики конфенциальности</a>
+              <a href="#">Пользовательское соглашение</a>
+              <a href="#">Контакты</a>
+            </div>
+            <div class="footer-info__develop">
+              Разработка сайта: <a href="uLeads.bz" target="_blank">uLeads.bz</a> 
+            </div>
+          </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <div class="modal choose-design-modal">
+    <div class="modal-overlay choose-modal-toggle"></div>
+    <div class="modal-wrapper modal-transition">
+      <div class="modal-header choose-design-modal-header">
+        <button class="modal-close choose-modal-toggle"></button>
+        <h2 class="modal-heading">Выбор дизайна</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-content choose-design-modal-content">
+            <div class="choose-design-modal-designs">
+              <div class="main-card">
+
+              </div>
+              <div class="choose-card choose-card-wrapper">
+                <div class="card-design">
+                    <div class="image">
+                      <img src="./assets/img/cards/card-item.jpg" alt="">
+                    </div>
+                    <div class="size">18 мм</div>
+                    <div class="price">
+                      <span class="price-new">от 1 499 ₽</span>
+                      <span class="price-old">1 999 ₽</span>
+                    </div>
+                </div>
+                <div class="card-design">
+                  <div class="image">
+                    <img src="./assets/img/cards/card-item.jpg" alt="">
+                  </div>
+                  <div class="size">18 мм</div>
+                  <div class="price">
+                    <span class="price-new">от 1 499 ₽</span>
+                    <span class="price-old">1 999 ₽</span>
+                  </div>
+                </div>
+                <div class="card-design">
+                  <div class="image">
+                    <img src="./assets/img/cards/card-item.jpg" alt="">
+                  </div>
+                  <div class="size">18 мм</div>
+                  <div class="price">
+                    <span class="price-new">от 1 499 ₽</span>
+                    <span class="price-old">1 999 ₽</span>
+                  </div>
+                </div>
+                <div class="card-design">
+                  <div class="image">
+                    <img src="./assets/img/cards/card-item.jpg" alt="">
+                  </div>
+                  <div class="size">18 мм</div>
+                  <div class="price">
+                    <span class="price-new">от 1 499 ₽</span>
+                    <span class="price-old">1 999 ₽</span>
+                  </div>
+                </div>
+                <div class="card-design">
+                  <div class="image">
+                    <img src="./assets/img/cards/card-item.jpg" alt="">
+                  </div>
+                  <div class="size">18 мм</div>
+                  <div class="price">
+                    <span class="price-new">от 1 499 ₽</span>
+                    <span class="price-old">1 999 ₽</span>
+                  </div>
+                </div>
+                <div class="card-design">
+                  <div class="image">
+                    <img src="./assets/img/cards/card-item.jpg" alt="">
+                  </div>
+                  <div class="size">18 мм</div>
+                  <div class="price">
+                    <span class="price-new">от 1 499 ₽</span>
+                    <span class="price-old">1 999 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <button class="modal-toggle">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
