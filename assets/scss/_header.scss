@@ -8,7 +8,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px;
+    padding: 18px 0;
+    &__name{
+        h3{
+            font: 700 1rem/1.25 $f-main-sb;
+            span{
+                font-weight: 400;
+                font-family: $f-main;
+            }
+        }
+        
+    }
     &__actions{
         display: flex;
         justify-content: space-between;
@@ -25,5 +35,38 @@ header{
     }
     &__shop{
         margin-left: 15px;
+        position: relative;
+        .shop{
+            
+            &:hover{
+                .shop-hint{
+                    transition: .8s;
+                    display: block;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1060px){
+        
+    }
+    @media only screen and (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+        &__callback,
+        &__shop{
+            margin-left: 0;
+            button{
+                background-color: transparent;
+            }
+            p{
+                font-size: 0;
+                padding: 0;
+            }
+        }
+        &__callback{
+            .icon-call{
+                background: #F4F6F9;
+            }
+        }
     }
 }
