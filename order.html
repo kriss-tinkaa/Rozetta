@@ -87,6 +87,18 @@
           </div>
       </div>
     </header>
+
+
+    <div class="ot-discovery__wishlists--creat-list-new-list">
+      <input class="ot-discovery__wishlists--creat-list-input-create-list" type="text" maxlength="50" placeholder="Name your list"
+      ng-disabled="loader.loading"
+      ng-model="newListName.title">
+      <md-button class="ot-btn__client-color ot-btn_small ot-btn__rounded " aria-label="Create List"
+      ng-click="onNewList(newListName)" style="width: 20%;">
+          Create List
+      </md-button>
+    </div>
+
     <main>
         <div class="container">
             <section class="cart-order">

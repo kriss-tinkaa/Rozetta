@@ -1,5 +1,8 @@
 
 
+$c-primary: #63482f;
+$c-secondary: rgb(224, 168, 103);
+$c-text: #313131;
 
 $text-color: #000;
 $btn-bg: #F9F4F4;
@@ -13,3 +16,12 @@ $red-color: #FF5757;
 $f-main: "Proxima Nova", sans-serif;
 $f-main-b: "Proxima Nova Bold", sans-serif;
 $f-main-sb: "Proxima Nova SemiBold", sans-serif;
+
+
+// Mixin
+
+@mixin d-flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

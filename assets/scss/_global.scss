@@ -26,6 +26,16 @@
       background-color: $section-bg;
     }
 
+    .main-text{
+      font: 600 3.875rem/0.88 $f-main-b;
+      color: $c-primary;
+      margin-bottom: 35px;
+    }
+    .second-text{
+      font: 400 1.125rem/1.44 $f-main;
+      color: $c-secondary;
+    }
+
 
     @media only screen and (max-width: 1060px) {
       .container{

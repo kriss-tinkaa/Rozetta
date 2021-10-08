@@ -1,72 +1,102 @@
 @import './variables';
 
-header{
-    border-bottom: 1px solid #EEF2F6;
-}
-
-.page-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 0;
-    &__name{
-        h3{
-            font: 700 1rem/1.25 $f-main-sb;
-            span{
-                font-weight: 400;
-                font-family: $f-main;
-            }
-        }
-        
+.page{
+    &-top-line{
+        border-bottom: 1px solid #EEF2F6;
     }
-    &__actions{
-        display: flex;
-        justify-content: space-between;
-    }
-    &__socials{
+    &-header{
         display: flex;
         align-items: center;
-        .icon-wrapper{
-            margin: 0 5px;
-        }
-    }
-    &__callback{
-        margin-left: 15px;
-    }
-    &__shop{
-        margin-left: 15px;
-        position: relative;
-        .shop{
+        justify-content: space-between;
+        padding: 5px 0;
+        
+        &__name{
+            a{
+                display: flex;
+                align-items: center;
+            }
+            h3{
+                font: 700 1rem/1.25 $f-main-sb;
+                span{
+                    font-weight: 400;
+                    font-family: $f-main;
+                }
+            }
             
-            &:hover{
-                .shop-hint{
-                    transition: .8s;
-                    display: block;
+        }
+        &__actions{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__socials{
+            display: flex;
+            align-items: center;
+            .icon-wrapper{
+                margin: 0 5px;
+            }
+        }
+        &__callback{
+            margin-left: 15px;
+        }
+        &__shop{
+            margin-left: 15px;
+            position: relative;
+            .shop{
+                
+                &:hover{
+                    .shop-hint{
+                        transition: .8s;
+                        display: block;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 1060px){
+            
+        }
+        @media only screen and (max-width: 767px) {
+            padding-left: 0;
+            padding-right: 0;
+            &__callback,
+            &__shop{
+                margin-left: 0;
+                button{
+                    background-color: transparent;
+                }
+                p{
+                    font-size: 0;
+                    padding: 0;
+                }
+            }
+            &__callback{
+                .icon-call{
+                    background: #F4F6F9;
                 }
             }
         }
     }
-    @media only screen and (max-width: 1060px){
-        
+    &-menu{
+        border-bottom: 1px solid #EEF2F6;
     }
-    @media only screen and (max-width: 767px) {
-        padding-left: 0;
-        padding-right: 0;
-        &__callback,
-        &__shop{
-            margin-left: 0;
-            button{
-                background-color: transparent;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    &-item{
+        padding: 0px 10px;
+        &:hover{
+            cursor: pointer;
+            a{
+                color: $c-secondary;
             }
-            p{
-                font-size: 0;
-                padding: 0;
-            }
+            
         }
-        &__callback{
-            .icon-call{
-                background: #F4F6F9;
-            }
-        }
+    }
+    &-link{
+        font: 400 1rem/1.25 $f-main;
+        
     }
 }

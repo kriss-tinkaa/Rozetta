@@ -1,6 +1,27 @@
 
 @import './variables';
 
+.section{
+    margin-bottom: 130px;
+    &:first-child{
+        margin-top: 30px;
+    }
+}
+
+.promo-slider{
+    .promo-slide{
+        @include d-flex (flex,space-between, normal);
+        &-content{
+            width: 47%;
+            @include d-flex (flex,space-between, normal);
+            flex-direction: column;
+        }
+        &-img{
+            width: 50%;
+        }
+    }
+}
+
 
 
 .card-line{
@@ -210,6 +231,7 @@
         }
     }
 }
+
 
 
 

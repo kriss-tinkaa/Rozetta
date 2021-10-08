@@ -1,18 +1,20 @@
 @import './variables';
 
-.btn{
+.button{
     border: 1px solid transparent;
-    border-radius: 50px;
-    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: $c-secondary;
+    padding: 13px 30px;
+    min-width: 150px;
     transition: box-shadow .8s;
     &:hover{
         cursor: pointer;
-        -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.12);
-        -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.12);
-        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.12);
+        border-color: $c-primary;
+        background-color: #fff;
+        color: $c-primary;
     }
     &-primary{
-        background-color: $btn-bg;
         &--icon{
             display: flex;
             align-items: center;

@@ -1,7 +1,11 @@
 $(function() {
 
     //slider
-    $('.slider').slick({});
+    $('.promo-slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+    });
 
     //accordion
     $(".faq__header").on("click", function(e) {

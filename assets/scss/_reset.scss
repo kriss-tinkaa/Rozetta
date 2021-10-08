@@ -69,7 +69,10 @@ html, body, body div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre
     padding: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: transparent; }
+    background: transparent; 
+    text-decoration: none;
+    color: #000;
+  }
   
   del {
     text-decoration: line-through; }
