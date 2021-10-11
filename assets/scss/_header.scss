@@ -8,7 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 5px 0;
+        padding: 5px 0; 
         
         &__name{
             a{
@@ -16,10 +16,11 @@
                 align-items: center;
             }
             h3{
-                font: 700 1rem/1.25 $f-main-sb;
+                font: 700 1.25rem/1.25 $f-secondary;
+                color: $c-primary;
                 span{
                     font-weight: 400;
-                    font-family: $f-main;
+                    font-family: $f-secondary;
                 }
             }
             
@@ -28,21 +29,13 @@
             display: flex;
             justify-content: space-between;
         }
-        &__socials{
-            display: flex;
-            align-items: center;
-            .icon-wrapper{
-                margin: 0 5px;
-            }
-        }
-        &__callback{
+        &__account{
             margin-left: 15px;
         }
         &__shop{
             margin-left: 15px;
             position: relative;
             .shop{
-                
                 &:hover{
                     .shop-hint{
                         transition: .8s;
@@ -57,7 +50,7 @@
         @media only screen and (max-width: 767px) {
             padding-left: 0;
             padding-right: 0;
-            &__callback,
+            &__account,
             &__shop{
                 margin-left: 0;
                 button{
@@ -68,8 +61,8 @@
                     padding: 0;
                 }
             }
-            &__callback{
-                .icon-call{
+            &__account{
+                .icon-account{
                     background: #F4F6F9;
                 }
             }
@@ -94,9 +87,41 @@
             }
             
         }
+        &:first-child{
+            padding-left: 0;
+        }
+        &:last-child{
+            padding-right: 0;
+        }
     }
     &-link{
-        font: 400 1rem/1.25 $f-main;
+        font: 400 1rem/1.25 $f-secondary;
         
+    }
+}
+
+.lang-items{
+    @include d-flex(flex, center, center);
+    li{
+        position: relative;
+        a{
+            color: $c-text;
+            font: 400 1rem/1.25 $f-secondary;
+        } 
+        &.active{
+            a{
+                font-weight: 600;
+                color: $c-secondary;
+            }
+        }
+        &:first-child{
+            margin-right: 10px;
+            &:after{
+                content: "/";
+                position: absolute;
+                padding: 2px 3px;
+                color: $c-text;
+            }
+        }
     }
 }

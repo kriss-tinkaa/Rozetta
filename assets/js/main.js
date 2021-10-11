@@ -1,10 +1,19 @@
 $(function() {
 
-    //slider
+    //PROMO slider
     $('.promo-slider').slick({
         dots: true,
         arrows: false,
         infinite: true,
+    });
+
+     //BRAND slider
+     $('.brand-slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1, 
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
     });
 
     //accordion

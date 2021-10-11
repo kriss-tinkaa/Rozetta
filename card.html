@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>У Сказки</title>
-    <meta name="description" content="У Сказки" />
+    <title>Tangle Teezer</title>
+    <meta name="description" content="Tangle Teezer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
@@ -11,80 +11,94 @@
 <body>
   <div class="page">
     <header>
-      <div class="container">
+      <div class="page-top-line">
+        <div class="container">
           <div class="page-header">
+            <div class="page-header__lang">
+              <ul class="lang-items">
+                <li class="active"> 
+                  <a href="#">RU</a>
+                </li>
+                <li>
+                  <a href="#">ENG</a>
+                </li>
+              </ul>
+            </div>
             <div class="page-header__name">
               <a href="./index.html">
-                <h3>У Сказки <span class="hide-tablet"> — магазин для дома.</span></h3>
+                <h3>Parfum</h3>
+                <img src="./assets/img/logotype.png" alt="logo">
               </a>
             </div>
             <div class="page-header__actions">
-              <div class="page-header__socials"> 
-                <a href="#" class="icon-wrapper">
-                  <span class="icon icon-vk"></span>
-                </a>
-                <a href="#" class="icon-wrapper">
-                  <span class="icon icon-instagram"></span> 
-                </a>
-                <a href="#" class="icon-wrapper">
-                  <span class="icon icon-telegram"></span>
-                </a>
-                 
+              <div class="page-header__account account" id="account-btn">
+                <button class="button button-icon">
+                    <span class="icon icon-account"></span>
+                </button>
               </div>
-              <div  class="page-header__callback">
-                <div class="callback" id="header-btn">
-                  <button class="btn btn-primary btn-primary--icon">
-                    <span class="icon icon-call"></span>
-                    <p>Позвоните мне</p>
-                  </button>
-                </div>
-              </div>
-              <div  class="page-header__shop">
+              <div  class="page-header__shop" id="shop-btn">
                 <div class="shop">
-                  <button class="btn btn-primary btn-primary--icon">
+                  <button class="button button-icon">
                     <span class="icon icon-shop"></span>
-                    <a href="./order.html">Моя корзина</a>
-                  </button>
-                  <div class="shop-hint">
-                    
-                    <div class="shop-hint-empty" style="display: none;">
-                      <span></span>
-                      <div class="shop-hint-empty__main">
-                        Ваша корзина пуста :(
-                      </div>
-                      <div class="shop-hint-empty__footer">
-                        <a href="#">Перейти к покупкам</a>
-                      </div>
+                </button>
+                <div class="shop-hint">
+                  
+                  <div class="shop-hint-empty" style="display: none;">
+                    <span></span>
+                    <div class="shop-hint-empty__main">
+                      Ваша корзина пуста :(
                     </div>
-                    <div class="shop-hint-full" >
-                      <span></span>
-                      <div class="shop-hint-full__header">
-                        Ваша корзина
-                      </div>
-                      <div class="shop-hint-full__main">
-                        <div class="shop-hint-full__item">
+                    <div class="shop-hint-empty__footer">
+                      <a href="#">Перейти к покупкам</a>
+                    </div>
+                  </div>
+                  <div class="shop-hint-full" >
+                    <span></span>
+                    <div class="shop-hint-full__header">
+                      Ваша корзина
+                    </div>
+                    <div class="shop-hint-full__main">
+                      <div class="shop-hint-full__item">
+                        <a href="./card.html" class="d-flex">
                           <div class="image">
                             <img src="./assets/img/cards/card-item.jpg" alt="">
                           </div>
                           <div class="main">
-                            <div class="title">Шапка и шарф комплект</div>
-                            <div class="desc">Дизайн: весёлый банан</div>
+                            <div class="title">Missha ВВ-крем M Perfect Cover BB Cream</div>
+                            <div class="desc">Уход</div>
                           </div>
-                          <div class="">
-                            <div class="value">7 990 ₽</div>
-                            <div class="delete">Удалить</div>
-                          </div>
+                        </a>
+                        
+                        <div class="">
+                          <div class="value">7 990 ₽</div>
+                          <div class="delete">Удалить</div>
                         </div>
                       </div>
-                      <div class="shop-hint-full__footer">
-                        <a href="#">Перейти к оформление заказа</a>
-                      </div>
+                    </div>
+                    <div class="shop-hint-full__footer">
+                      <a href="#">Перейти к оформление заказа</a>
                     </div>
                   </div>
                 </div>
+                </div>
+                  
               </div>
             </div>
           </div>
+        </div>          
+      </div>
+      <div class="page-menu">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Макияж</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Волосы</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Уход за кожей</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Парфюмерия</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Корея</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Sale</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Подарки</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -92,7 +106,7 @@
         <div class="container">
           <div class="card-line d-flex">
             <div class="card-line__name">
-              <h1>Лежанки для кошек и собак</h1>
+              <h1>Tangle Teezer Wet Detangler Hairbrush</h1>
             </div>
             <div class="card-line__info d-flex">
               <p class="name">Обзор</p>
@@ -105,12 +119,12 @@
         <div class="container">
           <div class="card d-flex">
             <div class="card__image">
-              <img src="./assets/img/cards/card-item.jpg" alt="">
+              <img src="./assets/img/cards/card-item2.jpg" alt="Tangle Teezer">
               <span>Выберите товар из Шага 1</span>
             </div>
             <div class="card__desc">
                 <div class="card-name">
-                  Купить Лежанку
+                  Tangle Teezer
                 </div>
                 <div class="card-steps">
                   <div class="card-step card-step--first">
@@ -220,24 +234,6 @@
           </div>
         </div>
       </section>
-      <section class="card-slider-wrapper">
-        <div class="container">
-          <div class="slider">
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
-            </div>
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
-            </div>
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
-            </div>
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="faq-wrapper bg-grey">
         <div class="container">
           <div class="faq">
@@ -273,7 +269,10 @@
       <div class="container">
           <div class="footer-main">
             <div class="footer-main__name">
-              <h3>У Сказки <span class="hide-tablet"> — магазин для дома.</span></h3>
+              <a href="./index.html" class="d-flex">
+                <h3>Parfum</h3>
+                <img src="./assets/img/logotype.png" alt="logo">
+              </a>
             </div>
               <div class="footer-main__socials">
                 <a href="#" class="icon-wrapper">
@@ -300,98 +299,12 @@
               <a href="#">Контакты</a>
             </div>
             <div class="footer-info__develop">
-              Разработка сайта: <a href="uLeads.bz" target="_blank">uLeads.bz</a> 
+              Разработка сайта: <a href="#" target="_blank">push.bz</a> 
             </div>
           </div>
       </div>
     </footer>
   </div>
-
-
-
-  <div class="modal choose-design-modal">
-    <div class="modal-overlay choose-modal-toggle"></div>
-    <div class="modal-wrapper modal-transition">
-      <div class="modal-header choose-design-modal-header">
-        <button class="modal-close choose-modal-toggle"></button>
-        <h2 class="modal-heading">Выбор дизайна</h2>
-      </div>
-      <div class="modal-body">
-        <div class="modal-content choose-design-modal-content">
-            <div class="choose-design-modal-designs">
-              <div class="main-card">
-
-              </div>
-              <div class="choose-card choose-card-wrapper">
-                <div class="card-design">
-                    <div class="image">
-                      <img src="./assets/img/cards/card-item.jpg" alt="">
-                    </div>
-                    <div class="size">18 мм</div>
-                    <div class="price">
-                      <span class="price-new">от 1 499 ₽</span>
-                      <span class="price-old">1 999 ₽</span>
-                    </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <button class="modal-toggle">Update</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

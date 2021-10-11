@@ -1,0 +1,26 @@
+
+
+@import './variables';
+
+.slick-dots{
+    @include  d-flex(flex, flex-start, center);
+    li{
+        background: #969696;
+        border-radius: 50px;
+        width: 13px;
+        height: 13px;
+        margin: 0 7px;
+        &.slick-active{
+            background-color: $c-secondary;
+
+        }
+        button{
+            background-color: transparent;
+            border: none;
+            font-size: 0;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

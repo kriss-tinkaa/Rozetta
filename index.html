@@ -7,101 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=yes">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
 <body>
   <div class="page">
     <header>
-        <div class="page-top-line">
-          <div class="container">
-            <div class="page-header">
-              <div class="page-header__name">
-                <a href="./index.html">
-                  <h3>Parfum</h3>
-                  <img src="./assets/img/logotype.png" alt="logo">
-                </a>
+      <div class="page-top-line">
+        <div class="container">
+          <div class="page-header">
+            <div class="page-header__lang">
+              <ul class="lang-items">
+                <li class="active"> 
+                  <a href="#">RU</a>
+                </li>
+                <li>
+                  <a href="#">ENG</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-header__name">
+              <a href="./index.html">
+                <h3>Parfum</h3>
+                <img src="./assets/img/logotype.png" alt="logo">
+              </a>
+            </div>
+            <div class="page-header__actions">
+              <div class="page-header__account account" id="account-btn">
+                <button class="button button-icon">
+                    <span class="icon icon-account"></span>
+                </button>
               </div>
-              <div class="page-header__actions">
-                <div class="page-header__socials"> 
-                  <a href="#" class="icon-wrapper">
-                    <span class="icon icon-vk"></span>
-                  </a>
-                  <a href="#" class="icon-wrapper">
-                    <span class="icon icon-instagram"></span> 
-                  </a>
-                  <a href="#" class="icon-wrapper">
-                    <span class="icon icon-telegram"></span>
-                  </a>
-                    
-                </div>
-                <div  class="page-header__callback">
-                  <div class="callback" id="header-btn">
-                    <button class="btn btn-primary btn-primary--icon">
-                      <span class="icon icon-call"></span>
-                      <p>Позвоните мне</p>
-                    </button>
+              <div  class="page-header__shop" id="shop-btn">
+                <div class="shop">
+                  <button class="button button-icon">
+                    <span class="icon icon-shop"></span>
+                </button>
+                <div class="shop-hint">
+                  
+                  <div class="shop-hint-empty" style="display: none;">
+                    <span></span>
+                    <div class="shop-hint-empty__main">
+                      Ваша корзина пуста :(
+                    </div>
+                    <div class="shop-hint-empty__footer">
+                      <a href="#">Перейти к покупкам</a>
+                    </div>
                   </div>
-                </div>
-                <div  class="page-header__shop">
-                  <div class="shop">
-                    <button class="btn btn-primary btn-primary--icon">
-                      <span class="icon icon-shop"></span>
-                      <a href="./order.html">Моя корзина</a>
-                    </button>
-                    <div class="shop-hint">
-                      
-                      <div class="shop-hint-empty" style="display: none;">
-                        <span></span>
-                        <div class="shop-hint-empty__main">
-                          Ваша корзина пуста :(
-                        </div>
-                        <div class="shop-hint-empty__footer">
-                          <a href="#">Перейти к покупкам</a>
-                        </div>
-                      </div>
-                      <div class="shop-hint-full" >
-                        <span></span>
-                        <div class="shop-hint-full__header">
-                          Ваша корзина
-                        </div>
-                        <div class="shop-hint-full__main">
-                          <div class="shop-hint-full__item">
-                            <div class="image">
-                              <img src="./assets/img/cards/card-item.jpg" alt="">
-                            </div>
-                            <div class="main">
-                              <div class="title">Шапка и шарф комплект</div>
-                              <div class="desc">Дизайн: весёлый банан</div>
-                            </div>
-                            <div class="">
-                              <div class="value">7 990 ₽</div>
-                              <div class="delete">Удалить</div>
-                            </div>
+                  <div class="shop-hint-full" >
+                    <span></span>
+                    <div class="shop-hint-full__header">
+                      Ваша корзина
+                    </div>
+                    <div class="shop-hint-full__main">
+                      <div class="shop-hint-full__item">
+                        <a href="./card.html" class="d-flex">
+                          <div class="image">
+                            <img src="./assets/img/cards/card-item.jpg" alt="">
                           </div>
-                        </div>
-                        <div class="shop-hint-full__footer">
-                          <a href="#">Перейти к оформление заказа</a>
+                          <div class="main">
+                            <div class="title">Missha ВВ-крем M Perfect Cover BB Cream</div>
+                            <div class="desc">Уход</div>
+                          </div>
+                        </a>
+                        
+                        <div class="">
+                          <div class="value">7 990 ₽</div>
+                          <div class="delete">Удалить</div>
                         </div>
                       </div>
                     </div>
+                    <div class="shop-hint-full__footer">
+                      <a href="#">Перейти к оформление заказа</a>
+                    </div>
                   </div>
                 </div>
+                </div>
+                  
               </div>
             </div>
-          </div>          
-        </div>
-        <div class="page-menu">
-          <div class="container">
-            <ul class="menu">
-              <li class="menu-item"><a href="#" class="menu-link">Макияж</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Волосы</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Уход за кожей</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Парфюмерия</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Корея</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Sale</a></li>
-              <li class="menu-item"><a href="#" class="menu-link">Подарки</a></li>
-            </ul>
           </div>
+        </div>          
+      </div>
+      <div class="page-menu">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Макияж</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Волосы</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Уход за кожей</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Парфюмерия</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Корея</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Sale</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Подарки</a></li>
+          </ul>
         </div>
+      </div>
     </header>
     <main>
       <section class="section promo-slider-wrapper">
@@ -131,11 +132,11 @@
                   <span class="discount">Скидки</span>
                 </div>
                 <div class="promo-slide__main">
-                  <h1 class="main-header-text">Бьюти-неделя! Скидки до 50%</h1>
-                  <h2 class="second-header-text">
+                  <h1 class="main-text">Бьюти-неделя! Скидки до 50%</h1>
+                  <h2 class="second-text">
                     Успейте купить любимые  средства по супер-выгодной цене!
                   </h2>
-                  <a class="button is-primary slider_text_block_link" href="/collection/all">Перейти</a>
+                  <a class="button button-primary" href="/collection/all">Перейти</a>
                 </div>
                 <div class="promo-slide__number">02</div>
               </div>
@@ -149,13 +150,31 @@
                   <span class="discount">Скидки</span>
                 </div>
                 <div class="promo-slide__main">
-                  <h1 class="main-header-text">Бьюти-неделя! Скидки до 50%</h1>
-                  <h2 class="second-header-text">
+                  <h1 class="main-text">Бьюти-неделя! Скидки до 50%</h1>
+                  <h2 class="second-text">
                     Успейте купить любимые  средства по супер-выгодной цене!
                   </h2>
-                  <a class="button is-primary slider_text_block_link" href="/collection/all">Перейти</a>
+                  <a class="button button-primary" href="/collection/all">Перейти</a>
                 </div>
                 <div class="promo-slide__number">03</div>
+              </div>
+              <div class="promo-slide-img">
+                <img src="./assets/img/promo/promo-1.jpg" alt="promo">
+              </div>
+            </div>
+            <div class="promo-slide">
+              <div class="promo-slide-content">
+                <div class="promo-slide__discount">
+                  <span class="discount">Скидки</span>
+                </div>
+                <div class="promo-slide__main">
+                  <h1 class="main-text">Бьюти-неделя! Скидки до 50%</h1>
+                  <h2 class="second-text">
+                    Успейте купить любимые  средства по супер-выгодной цене!
+                  </h2>
+                  <a class="button button-primary" href="/collection/all">Перейти</a>
+                </div>
+                <div class="promo-slide__number">04</div>
               </div>
               <div class="promo-slide-img">
                 <img src="./assets/img/promo/promo-1.jpg" alt="promo">
@@ -166,58 +185,114 @@
       </section>
       <section class="section brand-slider-wrapper">
         <div class="container">
-          <div class="slider">
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
+          <div class="brand-slider">
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/lancome.png" alt="">
             </div>
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/loreal.png" alt="">
             </div>
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/missha.png" alt="">
             </div>
-            <div class="slider-item">
-              <img src="https://images7.alphacoders.com/384/thumb-1920-384265.jpg" alt="">
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/sephora.png" alt="">
+            </div>
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/loreal.png" alt="">
+            </div>
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/missha.png" alt="">
+            </div>
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/sephora.png" alt="">
+            </div>
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/loreal.png" alt="">
+            </div>
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/missha.png" alt="">
+            </div>
+            <div class="brand-slider-item">
+              <img src="./assets/img/brand/sephora.png" alt="">
             </div>
           </div>
         </div>
       </section>
-      <section class="faq-wrapper bg-grey">
+      <section class="section faq-wrapper bg-grey">
         <div class="container">
           <div class="faq">
             <div class="faq__header faq__header--active">
-              <h3>Часто задаваемые вопросы</h3>
+              <h3>Способы оплаты</h3>
               <span class="arrow"></span>
             </div>
             <div class="faq__main">
                 <div class="faq-item">
-                  <div class="faq-item__header"> Let's make a nice big leafy tree.</div>
+                  <div class="faq-item__header"> 1. Наличная оплата при получении заказа</div>
                   <div class="faq-item__main">
-                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care. When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the wind to blow you around.
+                    Если вы не хотите предварительно оплачивать заказ, у вас есть возможность рассчитаться с курьером наличными в момент получения посылки. Чтобы процесс был максимально комфортным и для вас, и для курьера, рекомендуем заранее подготовить нужную сумму.
                   </div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-item__header"> Let's make a nice big leafy tree.</div>
+                  <div class="faq-item__header"> 2. Безналичная оплата при оформлении заказа</div>
                   <div class="faq-item__main">
-                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care. When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the wind to blow you around.
+                    Обладатели карт Visa и MasterCard могут полностью оплатить заказ в момент его оформления. Данный вариант оплаты позволит сэкономить время при получении посылки. При встрече с курьером, менеджерами пункта самовывоза или почтового отделения вам нужно будет просто забрать заказ, предварительно предоставив документ, подтверждающий личность получателя.
                   </div>
                 </div>
                 <div class="faq-item">
-                  <div class="faq-item__header"> Let's make a nice big leafy tree.</div>
+                  <div class="faq-item__header">3. Оплата наличными на пункте самовывоза</div>
                   <div class="faq-item__main">
-                    Let's make a nice big leafy tree. You have to make those little noises or it won't work. Let's put some happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care. When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the wind to blow you around.
+                    В Киеве и Харькове работают пункты самовывоза, которые позволяют забрать заказ в наиболее удобном для вас месте. При оформлении заказа вам нужно указать вариант доставки, выбрав один из предложенных пунктов самовывоза. Обратите внимание: на пунктах самовывоза возможен расчет только наличными средствами. Чтобы рассчитаться платежной картой, вам нужно выбрать удобный способ оплаты на этапе оформления заказа. 
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item__header">4. Оплата наличными при получении на почтовых отделениях и пунктах выдачи посылок</div>
+                  <div class="faq-item__main">
+                    При получении посылки на отделениях Новой Почты, Укрпочты, Интайм, Мист Экспресс, Justin или Автолюкс вы можете расплатиться только наличными. Таким образом, вы оплачиваете исключительно сумму заказа без скрытых платежей, комиссий и услуг транспортных компаний.
                   </div>
                 </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="section section-feedback-wrapper">
+        <div class="container">
+          <div class="section-feedback">
+            <div class="section-feedback__text-block">
+              <h3 class="main-text">Напишите нам</h3>
+              <form action="" method="POST">
+                <div class="input-wrap">
+                  <label for="name">
+                  <input id="name" type="text" placeholder="Введите Ваше имя">
+                </div>
+                <div class="input-wrap">
+                  <label for="email">
+                  <input id="email" type="email" placeholder="Электронная почта">
+                </div>
+                <div class="input-wrap">
+                  <label for="ask">
+                  <input id="ask" type="text" placeholder="Задайте нам вопрос">
+                </div>
+                <div class="button-wrap">
+                  <button class="button button-primary">Отправить</button>
+                </div>
+              </form>
+            </div>
+            <div class="section-feedback__img">
+              <img src="./assets/img/promo/promo-1.jpg" alt="promo">
+            </div>
+          </div>
+        </div> 
       </section>
     </main>
     <footer>
       <div class="container">
           <div class="footer-main">
             <div class="footer-main__name">
-              <h3>У Сказки <span class="hide-tablet"> — магазин для дома.</span></h3>
+              <a href="./index.html" class="d-flex">
+                <h3>Parfum</h3>
+                <img src="./assets/img/logotype.png" alt="logo">
+              </a>
             </div>
               <div class="footer-main__socials">
                 <a href="#" class="icon-wrapper">
@@ -244,97 +319,12 @@
               <a href="#">Контакты</a>
             </div>
             <div class="footer-info__develop">
-              Разработка сайта: <a href="uLeads.bz" target="_blank">uLeads.bz</a> 
+              Разработка сайта: <a href="#" target="_blank">push.bz</a> 
             </div>
           </div>
       </div>
     </footer>
   </div>
-
-
-
-  <div class="modal choose-design-modal">
-    <div class="modal-overlay choose-modal-toggle"></div>
-    <div class="modal-wrapper modal-transition">
-      <div class="modal-header choose-design-modal-header">
-        <button class="modal-close choose-modal-toggle"></button>
-        <h2 class="modal-heading">Выбор дизайна</h2>
-      </div>
-      <div class="modal-body">
-        <div class="modal-content choose-design-modal-content">
-            <div class="choose-design-modal-designs">
-              <div class="main-card">
-
-              </div>
-              <div class="choose-card choose-card-wrapper">
-                <div class="card-design">
-                    <div class="image">
-                      <img src="./assets/img/cards/card-item.jpg" alt="">
-                    </div>
-                    <div class="size">18 мм</div>
-                    <div class="price">
-                      <span class="price-new">от 1 499 ₽</span>
-                      <span class="price-old">1 999 ₽</span>
-                    </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-                <div class="card-design">
-                  <div class="image">
-                    <img src="./assets/img/cards/card-item.jpg" alt="">
-                  </div>
-                  <div class="size">18 мм</div>
-                  <div class="price">
-                    <span class="price-new">от 1 499 ₽</span>
-                    <span class="price-old">1 999 ₽</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <button class="modal-toggle">Update</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

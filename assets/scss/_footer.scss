@@ -6,10 +6,10 @@
         padding: 12px;
         &__name{
             h3{
-                font: 700 1rem/1.25 $f-main-sb;
+                font: 700 1rem/1.25 $f-secondary;
                 span{
                     font-weight: 400;
-                    font-family: $f-main;
+                    font-family: $f-secondary;
                 }
             }
         }
@@ -32,14 +32,14 @@
         justify-content: space-between;
         padding: 20px 0;
         &__license{
-            font: 400 0.75rem/1.5 $f-main; 
+            font: 400 0.75rem/1.5 $f-secondary;
         }
         &__links{
             display: flex;
             align-items: center;
             a{
                 color: $link-color;
-                font: 400 0.75rem/1.5 $f-main;
+                font: 400 0.75rem/1.5 $f-secondary;
                 padding: 0 20px;
                 position: relative;
                 &:before{
@@ -63,7 +63,7 @@
             }
         }
         &__develop{
-            font: 400 0.75rem/1.5 $f-main; 
+            font: 400 0.75rem/1.5 $f-secondary; 
             text-align: right;
             a{
                 color: $link-color;

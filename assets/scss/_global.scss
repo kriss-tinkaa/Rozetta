@@ -23,18 +23,26 @@
     }
 
     .bg-grey{
-      background-color: $section-bg;
+      background-color: #FAF5EF;
     }
 
     .main-text{
-      font: 600 3.875rem/0.88 $f-main-b;
+      font: 600 3.875rem/0.88 $f-main;
       color: $c-primary;
       margin-bottom: 35px;
     }
     .second-text{
-      font: 400 1.125rem/1.44 $f-main;
-      color: $c-secondary;
+      font: 400 1.125rem/1.44 $f-secondary;
+      color: $c-primary;
     }
+
+    .discount{
+      font: 600 0.875rem/1.13 $f-secondary;
+      text-transform: uppercase;
+      padding: 9px 8px;
+      color: $c-secondary;
+      letter-spacing: 1px;
+  }
 
 
     @media only screen and (max-width: 1060px) {
