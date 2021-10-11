@@ -10,6 +10,7 @@
 
 .promo-slider{
     .promo-slide{
+        position: relative;
         @include d-flex (flex,space-between, normal);
         &-content{
             width: 42%;
@@ -42,6 +43,29 @@
         position: absolute;
         z-index: 2;
         margin-top: -20px;
+    }
+    @media only screen and (max-width: 767px){
+        .promo-slide{
+            flex-direction: column;
+            &-content{
+                width: 100%;
+            }
+            &-img{
+                width: 100%
+            }
+            &__main{
+                a{
+                    display: none;
+                }
+            }
+            &__number{
+                position: absolute;
+                left: 10px;
+                bottom: 30px;
+                font-size: 1.875rem;
+            }
+        }
+        
     }
 }
 
@@ -447,7 +471,7 @@
         height: 40px;
         padding: 5px 10px;
         &:hover{
-            
+
             cursor: pointer;
         }
         &:focus{

@@ -1,6 +1,7 @@
 @import './variables';
   
   body {
+    min-width: 320px;
     height: 100%;
     font: 400 16px/1 $f-main;
     color: #1a1a1e; 
@@ -56,9 +57,19 @@
       }
     }
     @media only screen and (max-width: 767px) {
+      main{
+        margin-top: 50px;
+      }
       .container{
         max-width: calc(100% - 22px);
         margin: 0 11px;
+      }
+      .main-text{
+        font-size: 1.875rem;
+        margin-bottom: 20px;
+      }
+      .second-text{
+        font-size: 0.875rem;
       }
 
     }

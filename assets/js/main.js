@@ -14,6 +14,28 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+        
+    });
+
+    //menu
+    $('.mobile-btn').on("click", function() {
+        $('.mobile-btn').toggleClass('active');
+        $('.menu').toggleClass('active');
+        $('body').toggleClass('active');
     });
 
     //accordion
