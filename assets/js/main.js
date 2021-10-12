@@ -53,13 +53,42 @@ $(function() {
         $('.page').toggleClass('active');
     });
 
+    // resize
+
     $( window ).resize(function() {
       $('.mobile-btn').removeClass('active');
       $('.menu').removeClass('active');
       $('.page').removeClass('active');
     });
 
+    // check input/textarea
+    let checkForm = function(value){
+      let item = $(value);
+      item.blur(function(){
+        console.log('red');
+        if( $(this).val()){
+          $(this).addClass('filled');
+        } else{
+          $(this).removeClass('filled');
+        }
+      });
+    }
+    checkForm('input');
+    checkForm('textarea');
 
+    // validateEmail
+
+    function validateEmail(email) 
+        {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+        
+    console.log(validateEmail(input));
+
+
+
+    
 
     //accordion
     $(".faq__header").on("click", function(e) {
