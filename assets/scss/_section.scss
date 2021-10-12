@@ -1,6 +1,24 @@
 
 @import './variables';
 
+.page{
+    &.active{
+        overflow: hidden;
+        position: relative;
+        &:before{
+            position: absolute;
+            content: '';
+            display: block;
+            background-color: #56555691;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+        }
+    }
+}
+
 .section{
     margin-bottom: 130px;
     &:first-child{
@@ -45,10 +63,15 @@
         margin-top: -20px;
     }
     @media only screen and (max-width: 767px){
+        max-width: 500px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         .promo-slide{
             flex-direction: column;
             &-content{
                 width: 100%;
+                margin-bottom: 15px;
             }
             &-img{
                 width: 100%
@@ -57,6 +80,10 @@
                 a{
                     display: none;
                 }
+                h2{
+                    max-width: 93%;
+                    margin-bottom: 10px;  
+                }
             }
             &__number{
                 position: absolute;
@@ -64,9 +91,23 @@
                 bottom: 30px;
                 font-size: 1.875rem;
             }
+            &__discount{
+                max-width: 65px;
+                margin-bottom: 20px;
+            }
         }
         
     }
+}
+
+.brand-slider{
+    .slick-slide{
+        img{
+            max-width: 200px;
+            width: 100%;
+            margin: 0 auto
+        }
+    } 
 }
 
 .section-feedback{
@@ -76,6 +117,25 @@
     }
     &__img{
         width: 50%;
+    }
+    @media only screen and (max-width: 767px){
+        &__img{
+            display: none;
+        }
+        &__text-block{
+            width: 100%;
+            h3{
+                text-align: center;
+            }
+            form{
+                & > div{
+                    margin: 30px auto;
+                }
+                .button-wrap{
+                    text-align: center;
+                }
+            }
+        }
     }
 }
 
@@ -292,66 +352,6 @@
 
 
 
-.slider{
-    max-width: 90%;
-    margin: 30px auto;
-    .slick-slide{
-        
-        img{
-            max-width: 950px;
-            margin: 0 auto;
-        }
-    } 
-    .slick-arrow{
-        position: absolute;
-        z-index: 2;
-        top:50%;
-        margin-top: -25px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: none;
-        background: #F4F6F9;
-        font-size: 0;
-        &:hover{
-            cursor: pointer;
-        }
-        &.slick-next{
-            right: -55px;
-            &:before{
-                display: block;
-                content: url('/assets/img/svg/icon-next.svg');
-            }
-            
-        }
-        &.slick-prev{
-            left: -55px;
-            &:before{
-                display: block;
-                content: url('/assets/img/svg/icon-prev.svg');
-            }
-        }
-    }
-    @media only screen and (max-width: 767px){
-        .slick-slide{
-            img{
-                max-width: 500px;
-                width: 100%;
-            }
-        } 
-        .slick-arrow{
-            width: 35px;
-            height: 35px;
-            &.slick-next{
-                right: 0;
-                
-            }
-            &.slick-prev{
-                left: 0;
-            }
-        }
-    }
-}
 
 .faq{
     padding: 40px 0;
@@ -470,8 +470,9 @@
         width: 100%;
         height: 40px;
         padding: 5px 10px;
+        transition: .4s all ease-in-out;
         &:hover{
-
+            border-color: $c-secondary;
             cursor: pointer;
         }
         &:focus{

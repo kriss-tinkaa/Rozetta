@@ -5,6 +5,15 @@ $(function() {
         dots: true,
         arrows: false,
         infinite: true,
+        responsive:[
+          {
+            breakpoint: 768,
+            settings: {
+              autoplaySpeed: 3000,
+              autoplay: true,
+            }
+          },
+        ]
     });
 
      //BRAND slider
@@ -15,6 +24,12 @@ $(function() {
         autoplaySpeed: 2000,
         arrows: false,
         responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3
+            }
+          },
           {
             breakpoint: 768,
             settings: {
@@ -35,8 +50,16 @@ $(function() {
     $('.mobile-btn').on("click", function() {
         $('.mobile-btn').toggleClass('active');
         $('.menu').toggleClass('active');
-        $('body').toggleClass('active');
+        $('.page').toggleClass('active');
     });
+
+    $( window ).resize(function() {
+      $('.mobile-btn').removeClass('active');
+      $('.menu').removeClass('active');
+      $('.page').removeClass('active');
+    });
+
+
 
     //accordion
     $(".faq__header").on("click", function(e) {

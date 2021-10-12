@@ -15,14 +15,6 @@
                 display: flex;
                 align-items: center;
             }
-            h3{
-                font: 700 1.25rem/1.25 $f-secondary;
-                color: $c-primary;
-                span{
-                    font-weight: 400;
-                    font-family: $f-secondary;
-                }
-            }
             
         }
         &__actions{
@@ -59,11 +51,6 @@
                 p{
                     font-size: 0;
                     padding: 0;
-                }
-            }
-            &__account{
-                .icon-account{
-                    background: #F4F6F9;
                 }
             }
         }
@@ -110,10 +97,10 @@
     }
     @media only screen and (max-width: 767px){
         position: absolute;
-        top: 50px;
+        top: 48px;
         left: 0;
         right: 0;
-        opacity: 0;
+        display: none;
         z-index: 10;
         background-color: #fff;
         flex-direction: column;
@@ -125,7 +112,7 @@
             padding: 8px 10px;
         }
         &.active{
-            opacity: 1;
+            display: flex;
         }
         &-link{
             font-size: 1.125rem;
@@ -163,22 +150,37 @@
 }
 
 .mobile-btn{
-    display: flex;
     flex-direction: column;
     opacity: 0;
-    
+    display: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     span{
         display: inline-flex;
-        width: 25px;
+        width: 20px;
         height: 2px;
         background-color: $c-primary;
-        margin: 3px 0;
+        margin: 2px 0;
+        transition: all 0.25s ease-in;
 
     }
+    &:hover{
+        cursor: pointer;
+    }
     &.active{
-        
+       span{
+           &:nth-child(1){
+            transform: translateY(3px) rotate(45deg);
+           }
+           &:nth-child(2){
+            display: none;
+           }
+           &:nth-child(3){
+            transform: translateY(-3px) rotate(-45deg);
+           }
+       } 
     }
     @media only screen and (max-width: 767px){
         opacity: 1;
+        display: flex;
     }
 }

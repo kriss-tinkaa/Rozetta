@@ -2,6 +2,70 @@
 
 @import './variables';
 
+
+
+
+.slick-slider{
+    margin: 30px auto;
+    .slick-slide{
+        
+        img{
+            max-width: 950px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    } 
+    .slick-arrow{
+        position: absolute;
+        z-index: 2;
+        top:50%;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background: #F4F6F9;
+        font-size: 0;
+        &:hover{
+            cursor: pointer;
+        }
+        &.slick-next{
+            right: -55px;
+            &:before{
+                display: block;
+                content: url('/assets/img/svg/icon-next.svg');
+            }
+            
+        }
+        &.slick-prev{
+            left: -55px;
+            &:before{
+                display: block;
+                content: url('/assets/img/svg/icon-prev.svg');
+            }
+        }
+    }
+    @media only screen and (max-width: 767px){
+        .slick-slide{
+            img{
+                max-width: 500px;
+                width: 100%;
+            }
+        } 
+        .slick-arrow{
+            width: 35px;
+            height: 35px;
+            &.slick-next{
+                right: 0;
+                
+            }
+            &.slick-prev{
+                left: 0;
+            }
+        }
+    }
+}
+
 .slick-dots{
     @include  d-flex(flex, flex-start, center);
     li{
