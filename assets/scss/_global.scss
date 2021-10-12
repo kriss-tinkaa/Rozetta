@@ -46,7 +46,7 @@
   }
 
 
-    @media only screen and (max-width: 1060px) {
+    @media only screen and (max-width: 1024px) {
       .container{
         max-width: calc(100% - 100px);
         margin: 0 50px;
@@ -54,6 +54,9 @@
       }
       .hide-tablet {
         display: none;
+      }
+      .main-text{
+        font-size: 3.125rem;
       }
     }
     @media only screen and (max-width: 767px) {
