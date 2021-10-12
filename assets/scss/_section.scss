@@ -146,9 +146,7 @@
         }
         &__img{
             width: 100%;
-            img{
-                margin: 0 auto;
-            }
+            text-align: center;
         }
     }
     @media only screen and (max-width: 767px){
@@ -160,130 +158,29 @@
 
 
 
-.card-line{
+.category{
     justify-content: space-between;
     padding: 15px 0;
-    &__name{
-        font: 400 0.875rem/1.28 $f-main;
-        color: $text-color;
-    }
-    &__info{
-        .name{
-            font: 400 0.875rem/1.28 $f-main;
-            color: #737373;
-        }
-        
-        .price{
-            display: inline-block;
-            margin-left: 30px;
-            font: 600 0.875rem/1.28 $f-main;
-        }
-    }
-    @media only screen and (max-width: 767px){
-        &__info{
-            .name{
-                display: none;
-            }
-        }
+    &-item{
+        letter-spacing: 0.5px;
+        position: relative;
+           &:not(:last-child):after{
+                content: '/';
+                margin: 0 10px;
+                display: block;
+                color: $c-primary;
+            } 
     }
 }
 
 
-.card{
+.product{
     padding-top: 60px;
     align-items: flex-start;
     &-name{
         font: 600 1.5rem/1.115 $f-main;
         margin-bottom: 40px;
         
-    }
-    &-steps{
-
-    }
-    &-step{
-        margin-bottom: 40px;
-        &__name{
-            position: relative;
-            h4{
-                font: 400 1rem/1.25 $f-main; 
-                padding-right: 160px;
-                span{
-                    font-weight: 600;
-                    padding-left: 3px;
-                }
-            }
-            .choose-size{
-                position: absolute;
-                right: 0;
-                font: 400 1rem/1.125 $f-main;
-                color: $link-color;
-                &:hover{
-                    cursor: pointer;
-                }
-            }
-           
-
-        }
-        &__btns{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        &-btn{
-            width: 48%;
-            padding: 30px;
-            margin-bottom: 20px;
-            background: #FFFFFF;
-            border-radius: 10px;
-            border: 2px solid #E5E8ED;
-           
-            &.selected{
-                border-color: #b7ceb0;
-            }
-            .title{
-                text-align: center;
-                font: 600 1rem/1.125 $f-main;
-            }
-            .size{
-                font: 600 1rem/1.125 $f-main;
-                margin-bottom: 7px;
-            }
-            .image{
-                height: 100px;
-                margin-bottom: 28px;
-                img{
-                    border-radius: 8px;
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-    
-                }
-            }
-            &:hover{
-                cursor: pointer;
-                border-color: hsl(106, 23%, 75%);
-            }
-            &--full{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                &:hover{
-                    border-color: transparent;
-                    cursor:not-allowed;
-                }
-                div{
-                    font: 600 1rem/1.125 $f-main;
-                }
-                button{
-                    background: linear-gradient(96.59deg, #36FF6F 0%, #13F051 100%);
-                    font: 400 0.875rem/1.125 $f-main;
-                    border-radius: 20px;
-                    padding: 8px 22px;
-                }
-            }
-
-        }
     }
     &__image{
         margin-right: 30px;
@@ -307,64 +204,6 @@
     &__desc{
         padding-left: 30px;
         width: 65%;
-    }
-    @media only screen and (max-width: 1060px){
-        &-step{
-            &__name{
-                flex-wrap: wrap;
-                h4{
-                    display: block;
-                    width: calc(100% - 50px);
-                    padding-right: 0px;
-                }
-                .choose-size{
-                    position: static;
-                    display: block;
-                    width: 100%;
-                    padding-right: 30px;
-                    padding-bottom: 15px;
-                }
-            }
-            &--second,
-            &--third{
-                padding-right: 4px;
-                .card-step{
-                    &__btns{
-                        flex-direction: column;
-                    }
-                    &-btn{
-                        width: 100%;
-                    }
-                }
-                
-            }
-        }
-    }
-    @media only screen and (max-width: 767px){
-        flex-direction: column;
-        position: relative;
-        &-name{
-            position: absolute;
-            top: 17px;
-            font-size: 1rem;
-        }
-        &__image{
-            max-width: 350px;
-            width: 100%;
-            margin: 0 auto 30px;
-        }
-        &__desc{
-            width: 100%;
-            padding-left: 0;
-        }
-        &-step{
-            &-btn{
-                padding: 20px 30px;
-                .title{
-                    font-size: 0.75rem;
-                }
-            }
-        }
     }
 }
 
